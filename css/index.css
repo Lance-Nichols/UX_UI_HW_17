@@ -68,7 +68,7 @@ body {
      flex-flow: row wrap;
      justify-content: center;
      /*border: 1px solid salmon;*/
-     padding-bottom: 40px;
+     padding-bottom: 0px;
      padding-top: 40px;
  }
 
@@ -157,15 +157,17 @@ body {
   
   #projectSection {
       font-family: 'Migra';
-      padding-top: 10px;
       display: block;
       text-align: center;
       align-content: center;
+      padding-bottom: 70px;
+      padding-top: 10px;
+      background-color: #0000003e;
   }
   .projectPreviews {
       display: inline-flex;
       color: white;
-      padding: 20px 20px;
+      padding: 20px;
       width: 450px; 
       text-align: center;
       justify-content: center;
@@ -207,4 +209,44 @@ footer {
     height: auto;
     display: flex;
     align-items: center;
+}
+#aboutMe {
+    text-align: center;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+#profile {
+    display: flex;
+    justify-content: center;
+
+}
+#profilePic {
+    background-image: url(../images/profilePictureLance.jpg);
+    height: 350px;
+    width: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*position: absolute;
+    left: 25%;*/
+    display: inline-flex;
+
+}
+#profileIntro {
+    height: 320px;
+    width: 450px;
+    text-align: left;
+    font-size: 1.5em;
+    /*position: relative;
+    left: 45%;*/
+    padding: 15px 35px;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #0000006a);
+    display: inline-flex;
+    border-right: 4px solid white;
+}
+#contactMe {
+    height: 350px;
 }
