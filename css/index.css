@@ -1,7 +1,18 @@
 @font-face {
     font-family: 'Migra';
-    src: url('../fonts/Migra-Extrabold.woff2') format('woff2');
+    src: url('../fonts/Migra-Extrabold.woff2') format('woff2'),
+    url('../fonts/Migra-Extralight.woff2') format('woff2'),
+    url('../fonts/Migra-Regular.woff2') format('woff2');
     font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+ }
+ @font-face {
+    font-family: 'NeueMontreal';
+    src: url('../fonts/NeueMontreal-Regular.woff2') format('woff2'),
+    url('../fonts/NeueMontreal-Light.woff2') format('woff2'),
+    url('../fonts/NeueMontreal-Bold.woff2') format('woff2');
+    font-weight: 100 200 300 400 500 600 700 800 900;
     font-display: swap;
     font-style: normal;
  }
@@ -52,7 +63,7 @@ body {
      height: 20px;
      display: inline;
      padding-right: 30px;
-     font-family: 'Migra-Regular';
+     font-family: 'NeueMontreal';
      font-weight: 500;
      text-align: center;
      justify-content: center;
@@ -61,15 +72,17 @@ body {
 
  #typographyHeading {
      box-sizing: content-box;
-     font-family: 'Migra';
-     font-weight: 100;
-     font-size: 10em;
      display: flex;
      flex-flow: row wrap;
      justify-content: center;
      /*border: 1px solid salmon;*/
      padding-bottom: 0px;
      padding-top: 40px;
+ }
+ .titleSectionText {
+    font-family: 'Migra';
+    font-weight: 100;
+    font-size: 10em;
  }
 
  .breakRow {
@@ -92,6 +105,9 @@ body {
     overflow: hidden;
     box-sizing: content-box;
     position: relative;
+    font-family: 'NeueMontreal';
+    font-weight: 900;
+    font-size: 10em;
  }
     .marquee::before {
         position: absolute;
@@ -136,7 +152,7 @@ body {
   }
 
   li {
-    font-family: sans-serif;
+    font-family: 'NeueMontreal';
     font-weight: 900;
     color: white;
   }
@@ -148,8 +164,6 @@ body {
       height: 50px;
       width: 50px;
       position: relative;
-      left 0;
-      right: 0;
   }
   @keyframes rotation {
     from {
@@ -185,7 +199,7 @@ body {
       height: 250px;
   }
   .projectDescription {
-    font-family: Helvetica, sans-serif;
+    font-family: 'NeueMontreal';
     text-align: center;
   }
   .sectionHeading {
@@ -199,9 +213,11 @@ body {
       width: 100px;
       background-image: linear-gradient(to bottom right, #cb1860, #d35b2b);
       display: inline-block;
+      font-family: 'NeueMontreal';
+      font-weight: 900;
   }
 footer {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Neu';
     padding: 30px 20px 20px 20px;
     color: white;
     display: flex;
@@ -218,7 +234,7 @@ footer {
 #aboutMe {
     text-align: center;
     color: white;
-    font-family: Helvetica, sans-serif;
+    font-family: 'NeueMontreal';
     display: block;
     padding-top: 10px;
     padding-bottom: 50px;
