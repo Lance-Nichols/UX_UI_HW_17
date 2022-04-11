@@ -145,6 +145,11 @@ body {
   }
   .rotate {
       animation: rotation 10s infinite linear;
+      height: 50px;
+      width: 50px;
+      position: relative;
+      left 0;
+      right: 0;
   }
   @keyframes rotation {
     from {
